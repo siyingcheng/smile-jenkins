@@ -5,7 +5,7 @@
 1. Clone to local machine
 2. Create a bridge network for docker: `docker network create jenkins`
 3. Build with Dockerfile: `docker build -t myjenkins-blueocean:2.440.1-1 .`
-4. Run your own iamge as a container:
+4. Run your own image as a container:
 
 ```shell
 docker run --name jenkins-blueocean --restart=on-failure --detach \
