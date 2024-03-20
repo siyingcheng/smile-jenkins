@@ -14,6 +14,7 @@ docker run --name jenkins-blueocean --restart=on-failure --detach \
   --publish 8081:8080 --publish 50000:50000 \
   --volume jenkins-data:/var/jenkins_home \
   --volume jenkins-docker-certs:/certs/client:ro \
+  --volume /Volumes/Data/smile-jenkins/jenkins_home:/var/jenkins_home
   myjenkins-blueocean:2.440.1-1
 ```
 
